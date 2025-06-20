@@ -1,0 +1,30 @@
+{
+  "name": "mymacrotrackerweb",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/jeff547/My-Macro-Tracker-Web#readme",
+  "bugs": {
+    "url": "https://github.com/jeff547/My-Macro-Tracker-Web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeff547/My-Macro-Tracker-Web.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@heroicons/react": "^2.2.0",
+    "@tailwindcss/cli": "^4.1.10",
+    "lucide-react": "^0.518.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.10",
+    "typescript": "^5.8.3"
+  }
+}

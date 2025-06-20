@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-rum_raisins {
+        font-family: "Rum Raisin", static;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-200">
+    <div
+      class="flex items-center justify-between px-8 py-5 bg-white shadow-2xl"
+    >
+      <!-- Title -->
+      <div class="flex items-center ml-12">
+        <!-- Untensils Icon -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#860404"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-utensils-crossed-icon lucide-utensils-crossed"
+        >
+          <path
+            d="m16 2-2.3 2.3a3 3 0 0 0 0 4.2l1.8 1.8a3 3 0 0 0 4.2 0L22 8"
+          />
+          <path
+            d="M15 15 3.3 3.3a4.2 4.2 0 0 0 0 6l7.3 7.3c.7.7 2 .7 2.8 0L15 15Zm0 0 7 7"
+          />
+          <path d="m2.1 21.8 6.4-6.3" />
+          <path d="m19 5-7 7" />
+        </svg>
+        <!-- Title Text -->
+        <div class="px-4 text-3xl font-semibold text-red-800 font-rum_raisins">
+          Red Lantern Bistro
+        </div>
+      </div>
+      <!-- Nav Bar -->
+      <div class="flex space-x-12 text-lg font-medium text-gray-500 mr-28">
+        <a href="#" class="nav_card">Home</a>
+        <a href="#" class="nav_card">About</a>
+        <a href="#" class="nav_card">Menu</a>
+        <a href="#" class="nav_card">Foods</a>
+        <a href="#" class="nav_card">Drinks</a>
+        <a href="#" class="nav_card">Contact</a>
+      </div>
+    </div>
+    <div class="flex my-20 ml-40 space-x-20">
+      <!-- Image -->
+      <div
+        class="inline-block p-12 bg-gradient-to-b from-[#c30606] to-[#670101]"
+      >
+        <div class="w-[400px] h-[580px] bg-gray-100 p-7">
+          <img
+            src="./assets/chowmein.png"
+            alt="chowmein"
+            class="absolute h-auto w-[600px] left-27 top-55"
+          />
+        </div>
+      </div>
+      <div class="flex-col mt-16 space-y-8">
+        <div class="font-serif text-2xl">Welcome</div>
+        <div class="font-serif font-medium text-7xl">
+          Chinese
+          <img src="assets/bowl.png" alt="bowl" class="inline w-24" />
+          <br />
+          Restaraunt
+        </div>
+        <div class="font-serif text-2xl font-thin">
+          Delve into the rich flavors of authentic Chinese cuisine, <br />
+          for you to savor and enjoy.
+        </div>
+        <!-- Learn More Buttton -->
+        <div>
+          <button class="px-8 py-5 ml-4 text-xl red_button mt-7 rounded-4xl">
+            Learn More
+          </button>
+          <!-- Cards -->
+          <div class="flex space-x-6 ml-50">
+            <!-- Card -->
+            <div class="flex-col p-2 space-y-2 bg-white rounded-2xl">
+              <!-- Image -->
+              <div class="px-4 bg-gray-200 rounded-2xl">
+                <img
+                  src="./assets/fried_rice.png"
+                  alt="fried_rice"
+                  class="w-40"
+                />
+              </div>
+              <!-- Description -->
+              <div class="flex justify-between font-medium">
+                Egg Fried Rice
+                <i
+                  id="heartIcon1"
+                  class="text-2xl text-gray-400 cursor-pointer fas fa-heart hover:text-red-200"
+                ></i>
+                <script>
+                  const heart1 = document.getElementById("heartIcon1");
+                  heart1.addEventListener("click", () => {
+                    heart1.classList.toggle("text-red-500");
+                    heart1.classList.toggle("text-gray-400");
+                  });
+                </script>
+              </div>
+              <!-- Order Button -->
+              <div class="flex items-end justify-between pt-1">
+                <div class="py-1 text-xs font-medium">
+                  <i class="px-1 text-sm text-yellow-400 fa fa-star"></i>5.0
+                </div>
+                <button class="px-4 py-2 text-xs red_button rounded-2xl">
+                  Order Now
+                </button>
+              </div>
+            </div>
+            <!-- Card -->
+            <div class="flex-col p-2 space-y-2 bg-white rounded-2xl">
+              <!-- Image -->
+              <div class="px-12 py-1.5 bg-gray-200 rounded-2xl">
+                <img
+                  src="./assets/kung_pao_chicken.png"
+                  alt="kung_pao_chicken"
+                  class="w-23"
+                />
+              </div>
+              <!-- Description -->
+              <div class="flex justify-between font-medium">
+                Egg Fried Rice
+                <i
+                  id="heartIcon2"
+                  class="text-2xl text-gray-400 cursor-pointer fas fa-heart hover:text-red-200"
+                ></i>
+                <script>
+                  const heart2 = document.getElementById("heartIcon2");
+                  heart2.addEventListener("click", () => {
+                    heart2.classList.toggle("text-red-500");
+                    heart2.classList.toggle("text-gray-400");
+                  });
+                </script>
+              </div>
+              <!-- Order Button -->
+              <div class="flex items-end justify-between pt-1">
+                <div class="py-1 text-xs font-medium">
+                  <i class="px-1 text-sm text-yellow-400 fa fa-star"></i>5.0
+                </div>
+                <button class="px-4 py-2 text-xs red_button rounded-2xl">
+                  Order Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
